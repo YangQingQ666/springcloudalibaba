@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-video-service" />
+        <module name="cloud-order-service" />
+        <module name="cloud-user-service" />
+        <module name="cloud-common" />
+        <module name="cloud-api-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-api-gateway" target="11" />
+      <module name="cloud-common" target="11" />
+      <module name="cloud-order-service" target="11" />
+      <module name="cloud-user-service" target="11" />
+      <module name="cloud-video-service" target="11" />
+      <module name="springcloudalibaba" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

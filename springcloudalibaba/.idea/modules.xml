@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" filepath="$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/cloud-common.iml" filepath="$PROJECT_DIR$/cloud-common/cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-order-service/cloud-order-service.iml" filepath="$PROJECT_DIR$/cloud-order-service/cloud-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-user-service/cloud-user-service.iml" filepath="$PROJECT_DIR$/cloud-user-service/cloud-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-video-service/cloud-video-service.iml" filepath="$PROJECT_DIR$/cloud-video-service/cloud-video-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />
+    </modules>
+  </component>
+</project>

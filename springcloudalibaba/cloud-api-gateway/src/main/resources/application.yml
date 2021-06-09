@@ -1,0 +1,29 @@
+#server:
+#  port: 8888
+#spring:
+#  application:
+#    name: cloud-api-gateway
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#    gateway:
+#      routes: #数组形式
+#        - id: order-service  #路由唯一标识
+#          uri: lb://cloud-order-service  #从nacos获取名称转发,lb是负载均衡轮训策略
+#          order: 1 #优先级，数字越小优先级越高
+#          predicates: #断言
+#            - Path=/order-server/** #配置哪个路径才转发
+#            #- Before=2021-05-28T01:01:01.000+08:00 #接口到点下线
+#            #- Query=source #一定要携带的参数 (公共参数)
+#          filters: #过滤器，请求在传递过程中通过过滤器修改
+#            - StripPrefix=1  #去掉第一层前缀
+#      discovery:
+#        locator:
+#          enabled: true
+#  zipkin:
+#    base-url: http://localhost:9411/ #zipkin地址
+#    discovery-client-enabled: false  #不用开启服务发现
+#  sleuth:
+#    sampler:
+#      probability: 1.0

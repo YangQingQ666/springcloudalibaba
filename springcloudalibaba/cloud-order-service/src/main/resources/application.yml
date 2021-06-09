@@ -1,0 +1,33 @@
+#server:
+#  port: 8001
+#spring:
+#  application:
+#    name: cloud-order-service
+#  zipkin:
+#    base-url: http://localhost:9411/ #zipkin地址
+#    discovery-client-enabled: false  #不用开启服务发现
+#  sleuth:
+#    sampler:
+#      probability: 1.0 #采样百分比
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080
+#        port: 9999
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/cloud_order?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: Sinobay2018
+## 控制台输出sql、下划线转驼峰
+#mybatis:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true
+## 开启feign对Sentinel
+#feign:
+#  sentinel:
+#    enabled: true

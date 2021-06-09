@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-api-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml #文件拓展格式
+      discovery:
+        server-addr: localhost:8848
+  profiles:
+    active: dev
